@@ -18,17 +18,17 @@ Limit orders with prices that would trigger a trade can be ignored or filled, ho
 
 When a trade is done, the following should be output: "Trade, price: <trade price>, qty: <shares>"
 
-## Bonus Points
-
-- Solutions capable of matching a market order with complexity O(log n), being 'n' the number of open orders.
-- Solutions that take into account the arrival order of orders. In the previous example, this would mean that the first sell order with qty=100 should be filled before the second, with qty=200.
+## Files
+- helpers.py - Contains the Side enum and OrderType class.
+- order.py - Contains the Order class.
+- matchingEngine.py - Contains the MatchingEngine class which handles the matching of orders.
+- test.py - Contains test cases to verify the matching engine works as expected.
 
 ## Usage
 
 To use the Matching Engine, follow these steps:
 
 1. Clone this repository.
-2. Install the required dependencies with `pip install -r requirements.txt`.
 3. Import the `MatchingEngine` class from `matchingEngine.py`.
 4. Create an instance of the `MatchingEngine` class.
 5. Add orders to the Matching Engine with the `add_order()` method.
