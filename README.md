@@ -28,6 +28,7 @@ When a trade is done, the following should be output: "Trade, price: <trade pric
 
 ```bash
 python test.py
+```
 
 To use the Matching Engine, follow these steps:
 
